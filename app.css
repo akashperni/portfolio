@@ -81,6 +81,7 @@ section {
     justify-content: space-between;
 }
 
+
 .my-img { 
     display: flex;
     justify-content: center;
@@ -970,12 +971,12 @@ span {
     align-items: center;
     flex-wrap: wrap;
 }
-  
+
 .footer-social {
     display: flex;
     gap: 1.5rem;
 }
-  
+
 .footer-social a {
     width: 3.5rem;
     height: 3.5rem;
@@ -989,7 +990,7 @@ span {
     transition: background 0.3s, color 0.3s;
     text-decoration: none;
 }
-  
+
 .footer-social a:hover {
     background: var(--main-color);
     color: var(--bg-color);
@@ -1019,19 +1020,19 @@ span {
     background: var(--main-color);
     color: var(--bg-color);
 }
-  
+
   /* Stack vertically on smaller screens */
 @media (max-width: 768px) {
     .footer {
-      flex-direction: column;
-      text-align: center;
-      gap: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
     }
     .footer-social {
-      justify-content: center;
+    justify-content: center;
     }
     .footer-top {
-      margin-top: 0.5rem;
+    margin-top: 0.5rem;
     }
 }
 /* ==========================
@@ -1114,4 +1115,16 @@ Certifications Section
     .certification-box span {
         font-size: 1.6rem;
     }
+}
+/* Add this to your app.css */
+.contact-info p,
+.footer-contact p {
+font-size: 1.6rem;
+color: var(--text-color);
+}
+
+.contact-info a,
+.footer-contact a {
+color: var(--main-color);
+text-decoration: underline;
 }
